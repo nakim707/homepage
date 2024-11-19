@@ -313,7 +313,7 @@
   }
   .status {
     width: 1000px;
-    margin: 0px auto;
+    margin: -20px auto;
     display: flex;
     justify-content: center;
     gap: 80px;
@@ -354,7 +354,7 @@
   .portTitle1 {
     display: flex;
     gap: 5px;
-    margin: 40px 0px 80px 315px;
+    margin: 40px 0px 70px 315px;
   }
   .portTitle1 li {
     width: 100px;
@@ -528,9 +528,9 @@
     width: calc(100% / 3);
   }
   #con6 .tagOrange {
-    width: 100px;
+    width: 80px;
     margin: 30px auto;
-    margin-left: 50px;
+    margin-left: 150px;
   }
   #con6 .img {
     width: 80px;
@@ -545,6 +545,7 @@
   #con6 p {
     color: white;
     text-align: center;
+    margin-top: -10px;
   }
 
   /* ------- tag ------- */

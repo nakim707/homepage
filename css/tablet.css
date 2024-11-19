@@ -81,7 +81,7 @@
     transform: translateX(-265px);
   } */
   #con1 .logo li:nth-child(2) {
-    transform: translateX(-60px);
+    transform: translateX(-40px);
     z-index: 2;
   }
   #con1 .logo li:nth-child(3) {
@@ -94,7 +94,7 @@
 
   /* ME */
   #con1 .logo li:first-child {
-    transform: translateX(-60px);
+    transform: translateX(-40px);
     z-index: 3;
   }
   #con1 .logo li:last-child {
@@ -127,14 +127,14 @@
 
   /* 고리 */
   #con1 .ring {
-    width: 900px;
+    width: 850px;
     height: 150px;
-    border: 2px solid white;
+    border: 1px solid white;
     border-radius: 50%;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: rotate(-14deg) translate(-50%, -110%);
+    transform: rotate(-14deg) translate(-47%, -110%);
   }
   /* 흐르는 글씨 */
   .roll {
@@ -256,6 +256,8 @@
   #con3 {
     background-color: #c4e4f9;
     text-wrap: nowrap;
+    box-sizing: border-box;
+    padding-top: 100px;
   }
   #con3 .wrap {
     width: 90%;
@@ -263,7 +265,6 @@
     margin: 0px auto;
   }
   .con3Top {
-    padding-top: 10%;
     display: flex;
     justify-content: space-between;
   }
@@ -296,18 +297,18 @@
     margin-top: -12px;
   }
   .major div > div {
-    font-size: 16px;
+    font-size: 15px;
     margin: 1rem 0px;
   }
   .introduce {
     margin-top: 2rem;
   }
   .introduce div {
-    font-size: 17px;
+    font-size: 15px;
   }
   #con3 span {
     font-weight: bold;
-    font-size: 20px;
+    font-size: 17px;
     margin-right: 2rem;
   }
   .name {
@@ -327,7 +328,7 @@
     display: flex;
     justify-content: center;
     gap: 3rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0.7rem;
   }
   .status1 {
     margin-top: -2rem;
@@ -360,50 +361,51 @@
     background-image: url(../img/다운로드.png);
   }
   #con4 h2 {
-    font-size: 90px;
-    padding-top: 80px;
-    margin-left: 285px;
+    font-size: 70px;
+    padding-top: 4%;
+    margin-left: 9%;
   }
   .portTitle1 {
     display: flex;
-    gap: 5px;
-    margin: 40px 0px 80px 315px;
+    gap: 1%;
+    margin: 2% 0px 5% 9%;
   }
   .portTitle1 li {
-    width: 100px;
-    font-size: 20px;
+    width: 80px;
+    font-size: 16px;
   }
   .mockup {
     display: flex;
     justify-content: center;
-    gap: 100px;
+    gap: 2%;
     margin: 0px auto;
   }
 
   /* 설명 */
   #con4 .tagWhite {
-    width: 130px;
+    width: 115px;
     height: 24px;
     line-height: 24px;
-    font-size: 15px;
-    margin-top: -10px;
+    font-size: 14px;
+    margin-top: -1rem;
   }
   .mockup h3 {
-    font-size: 35px;
-    margin: 30px 0px 25px;
+    font-size: 30px;
+    margin: 2rem 0px 1rem;
   }
   .mockup h4 {
     width: 350px;
     line-height: 30px;
+    font-size: 15px;
   }
   .mockup span {
     display: inline-block;
     width: 80px;
     /* font-weight: bold; */
-    font-size: 18px;
+    font-size: 16px;
   }
   .detail {
-    margin-top: 30px;
+    margin-top: 1.5rem;
   }
   .mockup p {
     line-height: 30px;
@@ -438,16 +440,16 @@
 
   /* 목업 */
   .mockup > li:last-child {
-    margin-top: -20px;
+    margin-top: -1rem;
   }
   .mockup img {
-    width: 510px;
+    width: 380px;
   }
   .mockup_info {
     width: 230px;
     display: flex;
     gap: 10px;
-    margin: 30px auto;
+    margin: 1.5rem auto;
   }
   #con4 .tagBlue {
     width: 82px;
@@ -468,7 +470,7 @@
     height: 100vh;
     position: relative;
     box-sizing: border-box;
-    padding-top: 100px;
+    padding-top: 9%;
   }
   #con5 img {
     width: 100%;
@@ -478,16 +480,16 @@
   #con5 .tagOrange {
     width: 100px;
     font-size: 20px;
-    margin-left: 300px;
+    margin-left: 9%;
   }
   #con5 ul {
-    height: 320px;
+    height: 230px;
     display: flex;
     text-align: center;
     gap: 10px;
   }
   #con5 li {
-    width: 320px;
+    width: 230px;
     background-color: #666;
     transform: translateY(100px);
     transition: 0.5s;
@@ -498,7 +500,7 @@
     opacity: 1;
   }
   .illust1 {
-    margin-bottom: 10px;
+    margin-bottom: 3%;
   }
   .illustWrap {
     position: absolute;
@@ -541,19 +543,24 @@
     width: calc(100% / 3);
   }
   #con6 .tagOrange {
-    width: 100px;
-    margin: 20px auto;
-    margin-left: 5cqi;
+    width: 80px;
+    margin: 10% auto;
+    margin-left: 15%;
   }
   #con6 .img {
-    width: 100px;
-    height: 100px;
-    background-color: white;
-    margin: 20px auto;
+    width: 70px;
+    height: 70px;
+    margin: 1.2rem auto;
+  }
+  #con6 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
   #con6 p {
     color: white;
     text-align: center;
+    margin-top: -0.5rem;
   }
 
   /* ------- tag ------- */
