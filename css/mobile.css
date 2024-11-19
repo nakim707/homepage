@@ -1,0 +1,518 @@
+@media (max-width: 800px) {
+  .tablet {
+    display: none;
+  }
+  .mobile {
+    display: none;
+  }
+
+  /* ---------- con1 ---------- */
+  #con1 {
+    width: 100%;
+    height: 100vh;
+    background-color: #002a76;
+    overflow: hidden;
+    position: relative;
+  }
+  #con1 .logo {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: "Kanit", serif;
+    font-size: 130px;
+    font-weight: 700;
+    font-style: italic;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(calc(-50% + 2px), calc(-50% - 2px));
+    z-index: 2;
+  }
+  /* #con1 .logo li {
+    position: absolute;
+    z-index: 2;
+  } */
+  /* 로고위치 */
+  /* .logo li:first-child {
+      transform: translateX(-265px);
+    } */
+  /* #con1 .logo li:nth-child(2) {
+    transform: translateX(-40px);
+    z-index: 2;
+  }
+  #con1 .logo li:nth-child(3) {
+    transform: translateX(115px);
+    z-index: 2;
+  } */
+  /* .logo li:last-child {
+      transform: translateX(305px);
+    } */
+
+  /* ME
+  #con1 .logo li:first-child {
+    transform: translateX(-40px);
+    z-index: 3;
+  }
+  #con1 .logo li:last-child {
+    transform: translateX(115px);
+    z-index: 3;
+  } */
+  /* US */
+  #con1 .usLogo {
+    color: #df7a82;
+    /* display: none; */
+  }
+
+  /* 라인 */
+  #con1 .logoLine {
+    color: #002a76;
+    -webkit-text-stroke: 1px white;
+    font-style: italic;
+
+    font-family: "Kanit", serif;
+    font-size: 130px;
+    font-weight: 700;
+    /* display: none; */
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(calc(-50% - 5px), calc(-50% + 5px));
+    z-index: 1;
+  }
+
+  /* 고리 */
+  #con1 .ring {
+    width: 420px;
+    height: 70px;
+    border: 1px solid white;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: rotate(-14deg) translate(-47%, -110%);
+  }
+  /* 흐르는 글씨 */
+  .roll {
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 20px;
+    text-wrap: nowrap;
+  }
+  .roll span {
+    margin-left: 4%;
+  }
+  .rollUp {
+    position: absolute;
+    top: 2rem;
+
+    animation: slide1 40s linear infinite;
+  }
+  /* @keyframes slide1 {
+      0% {
+        transform: translateX(100%);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
+    } */
+  .rollDown {
+    position: absolute;
+    bottom: 2rem;
+    animation: slide2 40s linear infinite;
+  }
+  /* @keyframes slide2 {
+      0% {
+        transform: translateX(-100%);
+      }
+      100% {
+        transform: translateX(100%);
+      }
+    } */
+
+  /* ---------- Logo ---------- */
+  #con2 {
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    padding-top: 14%;
+    position: relative;
+  }
+  .con2wrap {
+    width: 100%;
+  }
+  .logowrap {
+    width: 95%;
+    margin: 0px auto;
+    padding-top: 10%;
+  }
+  /* 로고모음 */
+  .popLogo {
+    width: 80%;
+    margin: 0px auto;
+  }
+  .popLogo li {
+    width: 100%;
+    background-color: white;
+  }
+  .popLogo img {
+    width: 100%;
+  }
+
+  /* 사전적 정의 */
+  .dicWord {
+    width: 5rem;
+    height: 2rem;
+
+    line-height: 1.7rem;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 900;
+    color: #0037b5;
+    background-color: #e3f5ff;
+    margin-bottom: 1.5rem;
+  }
+  .dicMean {
+    font-size: 17px;
+  }
+  .noun {
+    color: #0143cb;
+  }
+  .muse {
+    background-color: #e3f5ff;
+    font-weight: bold;
+    padding: 0px 5px;
+    margin-bottom: 20px;
+  }
+  #con2 p {
+    font-size: 14px;
+    margin-top: 1.5rem;
+    margin-bottom: -1.5rem;
+  }
+  #con2 h3 {
+    margin-top: 4rem;
+    font-size: 18px;
+  }
+  #con2 h2 {
+    margin-top: 1rem;
+    font-size: 20px;
+    text-wrap: nowrap;
+  }
+  .highlight {
+    background-color: #a9cde5;
+    padding: 2px 5px;
+  }
+
+  /* ---------- About Me ---------- */
+  .wrap {
+    display: none;
+  }
+  #con3 {
+    background-color: #c4e4f9;
+    /* text-wrap: nowrap; */
+    box-sizing: border-box;
+    padding-top: 12%;
+  }
+  #con3 .wrapMo {
+    width: 90%;
+    margin: 0px auto;
+  }
+  #con3 .tag {
+    display: flex;
+    align-items: center;
+  }
+  #con3 .tagOrange {
+    width: 7rem;
+    font-size: 18px;
+  }
+  #con3 .tagWhite {
+    width: 7rem;
+    font-size: 18px;
+    margin-left: -0.7rem;
+  }
+  #con3 .selfi {
+    width: 360px;
+    display: block;
+    margin: 5% auto;
+  }
+  #con3 .major {
+    width: 100%;
+    margin: 5% auto;
+    display: flex;
+  }
+  .major > div {
+    margin-top: -12px;
+  }
+  .major div > div {
+    font-size: 15px;
+    margin: 1rem 0px;
+  }
+  #con3 .major .majorDate {
+    font-weight: normal;
+    font-size: 15px;
+    margin-right: 1rem;
+  }
+  .left {
+    margin-left: 2.7rem;
+  }
+  .introduce {
+    width: 400px;
+    margin: 0px auto;
+    margin-top: 2rem;
+  }
+  .introduce div {
+    font-size: 15px;
+  }
+  #con3 span {
+    font-weight: bold;
+    font-size: 17px;
+    margin-right: 2rem;
+  }
+  .name {
+    margin-left: 0.5rem;
+  }
+  .date {
+    margin-left: 4rem;
+  }
+  /* status */
+  .status img {
+    width: 50px;
+    object-fit: cover;
+  }
+  .status ul {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+  .statusBar {
+    width: 120px;
+    height: 20px;
+    background-color: white;
+    border: 2px solid #aaa;
+    border-radius: 15px;
+  }
+  .statusBar > div {
+    width: 100px;
+    height: 8px;
+    background-color: #0037b5;
+    border-radius: 20px;
+    margin: 6px 0px 0px 5px;
+  }
+  .statusWrap {
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+    margin-top: -1rem;
+    padding-bottom: 1.5rem;
+  }
+
+  /* ------- Design&Publishing ------- */
+  #con4 {
+    width: 100%;
+    margin: 0px auto;
+    background-image: url(../img/다운로드.png);
+  }
+  #con4 h2 {
+    font-size: 50px;
+    padding-top: 5%;
+    margin-left: 7%;
+  }
+  .portTitle1 {
+    display: flex;
+    gap: 2%;
+    margin: 2% 0px 5% 7%;
+  }
+  .portTitle1 li {
+    width: 80px;
+    font-size: 16px;
+  }
+  /* .mockup {
+    display: flex;
+    justify-content: center;
+    gap: 2%;
+    margin: 0px auto;
+  } */
+  .mockup {
+    width: 400px;
+    margin: 0px auto;
+  }
+  /* 설명 */
+  #con4 .tagWhite {
+    width: 115px;
+    height: 24px;
+    line-height: 24px;
+    font-size: 14px;
+    margin-top: -1rem;
+  }
+  .mockup h3 {
+    font-size: 30px;
+    margin: 2rem 0px 1rem;
+  }
+  .mockup h4 {
+    width: 350px;
+    line-height: 30px;
+    font-size: 15px;
+  }
+  .mockup span {
+    display: inline-block;
+    width: 80px;
+    /* font-weight: bold; */
+    font-size: 16px;
+  }
+  .detail {
+    margin-top: 1.5rem;
+  }
+  .mockup p {
+    line-height: 30px;
+    font-size: 14px;
+  }
+  .color {
+    display: flex;
+    align-items: center;
+    line-height: 30px;
+  }
+  .colorchart {
+    display: flex;
+    gap: 7px;
+  }
+  .colorchart li {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+  }
+  .colorchart li:nth-child(1) {
+    background-color: #476269;
+  }
+  .colorchart li:nth-child(2) {
+    background-color: #304e56;
+  }
+  .colorchart li:nth-child(3) {
+    background-color: #5e605f;
+  }
+  .colorchart li:nth-child(4) {
+    background-color: #000;
+  }
+
+  /* 목업 */
+  .mockup > li:last-child {
+    margin-top: -1rem;
+  }
+  .mockup img {
+    width: 320px;
+  }
+  .mockup_info {
+    width: 230px;
+    display: flex;
+    gap: 10px;
+    margin: 1.5rem auto;
+  }
+  #con4 .tagBlue {
+    width: 70px;
+    font-size: 14px;
+  }
+  #con4 .tagBlue a {
+    color: white;
+  }
+  #con4 .tagBlack {
+    width: 70px;
+    font-size: 14px;
+  }
+  #con4 .tagBlack a {
+    color: white;
+  }
+
+  /* ------- Illustration ------- */
+  #con5 {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10% 0%;
+  }
+  #con5 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  #con5 .tagOrange {
+    width: 100px;
+    font-size: 16px;
+    margin-left: 9%;
+  }
+  #con5 ul {
+    width: 70%;
+    margin: 1.5rem auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 1.5rem;
+  }
+
+  /* ------- contact ------- */
+  #con6 {
+    width: 100%;
+    height: 100vh;
+    background-color: #002a76;
+    box-sizing: border-box;
+    padding-top: 0.5%;
+  }
+  #con6 ul {
+    width: 90%;
+    margin: 0px auto;
+  }
+  #con6 .tagOrange {
+    width: 80px;
+    margin: 10% auto;
+    margin-left: 20%;
+  }
+  #con6 .img {
+    width: 70px;
+    height: 70px;
+    margin: -1.2rem auto;
+  }
+  #con6 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  #con6 p {
+    color: white;
+    text-align: center;
+    margin-top: 2rem;
+  }
+
+  /* ------- tag ------- */
+  .tagOrange {
+    background-color: #df6d55;
+    padding: 4px 14px;
+    color: white;
+    border-radius: 20px;
+    text-align: center;
+  }
+  .tagWhite {
+    background-color: white;
+    padding: 4px 14px;
+    color: black;
+    border-radius: 20px;
+    border: 1px solid black;
+    text-align: center;
+  }
+  .tagBlue {
+    background-color: #0143cb;
+    padding: 4px 14px;
+    color: white;
+    border-radius: 20px;
+    text-align: center;
+  }
+  .tagBlack {
+    background-color: black;
+    padding: 4px 14px;
+    color: white;
+    border-radius: 20px;
+    text-align: center;
+  }
+}
