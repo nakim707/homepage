@@ -529,14 +529,18 @@
   }
   #con6 .tagOrange {
     width: 100px;
-    margin: 20px auto;
-    margin-left: 5cqi;
+    margin: 30px auto;
+    margin-left: 50px;
   }
   #con6 .img {
-    width: 100px;
-    height: 100px;
-    background-color: white;
+    width: 80px;
+    height: 80px;
     margin: 20px auto;
+  }
+  #con6 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
   #con6 p {
     color: white;
