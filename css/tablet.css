@@ -1,0 +1,589 @@
+@media (min-width: 800px) and (max-width: 1200px) {
+  .tablet {
+    display: none;
+  }
+  /* ---------- Navi ---------- */
+  /* navi */
+  #navi {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: fixed;
+    top: 50%;
+    right: 30px;
+    transform: translateY(-50%);
+    z-index: 500;
+
+    opacity: 0;
+  }
+  #navi li {
+    width: 15px;
+    height: 15px;
+    border-radius: 10px;
+    background-color: #dadada;
+  }
+  #navi .on {
+    background-color: #0043be;
+  }
+  /* ---------- header ---------- */
+  header {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 0px 30px;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+
+    position: fixed;
+    z-index: 999;
+    background-color: white;
+
+    opacity: 0;
+  }
+  header img {
+    height: 45px;
+  }
+  header ul {
+    display: flex;
+    font-size: 20px;
+    gap: 30px;
+  }
+  header li {
+    text-wrap: nowrap;
+  }
+  /* ---------- con1 ---------- */
+  #con1 {
+    width: 100%;
+    height: 100vh;
+    background-color: #002a76;
+    overflow: hidden;
+    position: relative;
+  }
+  #con1 .logo {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: "Kanit", serif;
+    font-size: 250px;
+    font-weight: 700;
+    font-style: italic;
+  }
+  #con1 .logo li {
+    position: absolute;
+  }
+  /* 로고위치 */
+  /* .logo li:first-child {
+    transform: translateX(-265px);
+  } */
+  #con1 .logo li:nth-child(2) {
+    transform: translateX(-60px);
+    z-index: 2;
+  }
+  #con1 .logo li:nth-child(3) {
+    transform: translateX(115px);
+    z-index: 2;
+  }
+  /* .logo li:last-child {
+    transform: translateX(305px);
+  } */
+
+  /* ME */
+  #con1 .logo li:first-child {
+    transform: translateX(-60px);
+    z-index: 3;
+  }
+  #con1 .logo li:last-child {
+    transform: translateX(115px);
+    z-index: 3;
+  }
+  /* US */
+  #con1 .usLogo {
+    color: #df7a82;
+    /* display: none; */
+  }
+
+  /* 라인 */
+  #con1 .logoLine {
+    color: #002a76;
+    -webkit-text-stroke: 1px white;
+    font-style: italic;
+
+    font-family: "Kanit", serif;
+    font-size: 250px;
+    font-weight: 700;
+    /* display: none; */
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(calc(-50% - 12px), calc(-50% + 12px));
+    z-index: 1;
+  }
+
+  /* 고리 */
+  #con1 .ring {
+    width: 900px;
+    height: 150px;
+    border: 2px solid white;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: rotate(-14deg) translate(-50%, -110%);
+  }
+  /* 흐르는 글씨 */
+  .roll {
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 30px;
+    text-wrap: nowrap;
+  }
+  .roll span {
+    margin-left: 100px;
+  }
+  .rollUp {
+    position: absolute;
+    top: 25px;
+
+    animation: slide1 40s linear infinite;
+  }
+  /* @keyframes slide1 {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  } */
+  .rollDown {
+    position: absolute;
+    bottom: 25px;
+    animation: slide2 40s linear infinite;
+  }
+  /* @keyframes slide2 {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(100%);
+    }
+  } */
+
+  /* ---------- Logo ---------- */
+  #con2 {
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    padding-top: 10%;
+    position: relative;
+  }
+  .con2wrap {
+    width: 1500px;
+    margin: 0px auto;
+  }
+  .logowrap {
+    padding-top: 7%;
+    padding-left: 5%;
+  }
+  /* 로고모음 */
+  .popLogo {
+    width: 400px;
+    display: flex;
+    position: absolute;
+    top: 13%;
+    right: 10%;
+  }
+  .popLogo li {
+    width: 100%;
+    background-color: white;
+  }
+  .popLogo img {
+    width: 100%;
+  }
+
+  /* 사전적 정의 */
+  .dicWord {
+    width: 6rem;
+    height: 3rem;
+
+    line-height: 2.5rem;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 900;
+    color: #0037b5;
+    background-color: #e3f5ff;
+    margin-bottom: 2rem;
+  }
+  .dicMean {
+    font-size: 22px;
+  }
+  .noun {
+    color: #0143cb;
+  }
+  .muse {
+    background-color: #e3f5ff;
+    font-weight: bold;
+    padding: 0px 5px;
+    margin-bottom: 20px;
+  }
+  #con2 p {
+    font-size: 14px;
+    margin-top: 3rem;
+    margin-bottom: -1.5rem;
+  }
+  #con2 h3 {
+    margin-top: 4rem;
+    font-size: 25px;
+  }
+  #con2 h2 {
+    margin-top: 1.5rem;
+    font-size: 35px;
+    text-wrap: nowrap;
+  }
+  .highlight {
+    background-color: #a9cde5;
+    padding: 2px 5px;
+  }
+
+  /* ---------- About Me ---------- */
+  #con3 {
+    background-color: #c4e4f9;
+    text-wrap: nowrap;
+  }
+  #con3 .wrap {
+    width: 90%;
+    height: 100vh;
+    margin: 0px auto;
+  }
+  .con3Top {
+    padding-top: 10%;
+    display: flex;
+    justify-content: space-between;
+  }
+  #con3 .tag {
+    display: flex;
+    align-items: center;
+  }
+  #con3 .tagOrange {
+    width: 7rem;
+    font-size: 18px;
+  }
+  #con3 .tagWhite {
+    width: 7rem;
+    font-size: 18px;
+    margin-left: -0.7rem;
+  }
+  #con3 .selfi {
+    width: 360px;
+  }
+  .myself {
+    display: flex;
+    justify-content: center;
+    margin: 5%;
+  }
+  #con3 .major {
+    margin-top: 5%;
+    display: flex;
+  }
+  .major > div {
+    margin-top: -12px;
+  }
+  .major div > div {
+    font-size: 16px;
+    margin: 1rem 0px;
+  }
+  .introduce {
+    margin-top: 2rem;
+  }
+  .introduce div {
+    font-size: 17px;
+  }
+  #con3 span {
+    font-weight: bold;
+    font-size: 20px;
+    margin-right: 2rem;
+  }
+  .name {
+    margin-left: 0.5rem;
+  }
+  .date {
+    margin-left: 4rem;
+  }
+  /* status */
+  .status img {
+    width: 50px;
+    object-fit: cover;
+  }
+  .status {
+    width: 800px;
+    margin: 0px auto;
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin-bottom: 1rem;
+  }
+  .status1 {
+    margin-top: -2rem;
+  }
+  .status li > ul {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  .statusBar {
+    width: 150px;
+    height: 20px;
+    background-color: white;
+    border: 2px solid #aaa;
+    border-radius: 15px;
+  }
+  .statusBar > div {
+    width: 120px;
+    height: 8px;
+    background-color: #0037b5;
+    border-radius: 20px;
+    margin: 6px 0px 0px 5px;
+  }
+
+  /* ------- Design&Publishing ------- */
+  #con4 {
+    width: 100%;
+    height: 100vh;
+    margin: 0px auto;
+    background-image: url(../img/다운로드.png);
+  }
+  #con4 h2 {
+    font-size: 90px;
+    padding-top: 80px;
+    margin-left: 285px;
+  }
+  .portTitle1 {
+    display: flex;
+    gap: 5px;
+    margin: 40px 0px 80px 315px;
+  }
+  .portTitle1 li {
+    width: 100px;
+    font-size: 20px;
+  }
+  .mockup {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    margin: 0px auto;
+  }
+
+  /* 설명 */
+  #con4 .tagWhite {
+    width: 130px;
+    height: 24px;
+    line-height: 24px;
+    font-size: 15px;
+    margin-top: -10px;
+  }
+  .mockup h3 {
+    font-size: 35px;
+    margin: 30px 0px 25px;
+  }
+  .mockup h4 {
+    width: 350px;
+    line-height: 30px;
+  }
+  .mockup span {
+    display: inline-block;
+    width: 80px;
+    /* font-weight: bold; */
+    font-size: 18px;
+  }
+  .detail {
+    margin-top: 30px;
+  }
+  .mockup p {
+    line-height: 30px;
+    font-size: 14px;
+  }
+  .color {
+    display: flex;
+    align-items: center;
+    line-height: 30px;
+  }
+  .colorchart {
+    display: flex;
+    gap: 7px;
+  }
+  .colorchart li {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+  }
+  .colorchart li:nth-child(1) {
+    background-color: #476269;
+  }
+  .colorchart li:nth-child(2) {
+    background-color: #304e56;
+  }
+  .colorchart li:nth-child(3) {
+    background-color: #5e605f;
+  }
+  .colorchart li:nth-child(4) {
+    background-color: #000;
+  }
+
+  /* 목업 */
+  .mockup > li:last-child {
+    margin-top: -20px;
+  }
+  .mockup img {
+    width: 510px;
+  }
+  .mockup_info {
+    width: 230px;
+    display: flex;
+    gap: 10px;
+    margin: 30px auto;
+  }
+  #con4 .tagBlue {
+    width: 82px;
+  }
+  #con4 .tagBlue a {
+    color: white;
+  }
+  #con4 .tagBlack {
+    width: 82px;
+  }
+  #con4 .tagBlack a {
+    color: white;
+  }
+
+  /* ------- Illustration ------- */
+  #con5 {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    box-sizing: border-box;
+    padding-top: 100px;
+  }
+  #con5 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  #con5 .tagOrange {
+    width: 100px;
+    font-size: 20px;
+    margin-left: 300px;
+  }
+  #con5 ul {
+    height: 320px;
+    display: flex;
+    text-align: center;
+    gap: 10px;
+  }
+  #con5 li {
+    width: 320px;
+    background-color: #666;
+    transform: translateY(100px);
+    transition: 0.5s;
+    opacity: 1;
+  }
+  #con5 li.up {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  .illust1 {
+    margin-bottom: 10px;
+  }
+  .illustWrap {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  #con5 .illust1 li:nth-child(1) {
+    transition-delay: 0s;
+  }
+  #con5 .illust1 li:nth-child(2) {
+    transition-delay: 0.3s;
+  }
+  #con5 .illust1 li:nth-child(3) {
+    transition-delay: 0.6s;
+  }
+  #con5 .illust2 li:nth-child(1) {
+    transition-delay: 0.9s;
+  }
+  #con5 .illust2 li:nth-child(2) {
+    transition-delay: 1.2s;
+  }
+  #con5 .illust2 li:nth-child(3) {
+    transition-delay: 1.5s;
+  }
+
+  /* ------- contact ------- */
+  #con6 {
+    width: 100%;
+    height: 250px;
+    background-color: #002a76;
+  }
+  #con6 ul {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0px auto;
+  }
+  #con6 li {
+    width: calc(100% / 3);
+  }
+  #con6 .tagOrange {
+    width: 100px;
+    margin: 20px auto;
+    margin-left: 5cqi;
+  }
+  #con6 .img {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    margin: 20px auto;
+  }
+  #con6 p {
+    color: white;
+    text-align: center;
+  }
+
+  /* ------- tag ------- */
+  .tagOrange {
+    background-color: #df6d55;
+    padding: 4px 14px;
+    color: white;
+    border-radius: 20px;
+    text-align: center;
+  }
+  .tagWhite {
+    background-color: white;
+    padding: 4px 14px;
+    color: black;
+    border-radius: 20px;
+    border: 1px solid black;
+    text-align: center;
+  }
+  .tagBlue {
+    background-color: #0143cb;
+    padding: 4px 14px;
+    color: white;
+    border-radius: 20px;
+    text-align: center;
+  }
+  .tagBlack {
+    background-color: black;
+    padding: 4px 14px;
+    color: white;
+    border-radius: 20px;
+    text-align: center;
+  }
+}
