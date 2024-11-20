@@ -13,10 +13,6 @@ $(function () {
     let scroll = $(this).scrollTop();
     // console.log(scroll);
 
-    if (scroll >= con2) {
-      $("#header").addClass("on");
-    }
-
     if (scroll >= con1 && scroll <= con2) {
       $("#navi li").removeClass("on");
       $("#navi li").eq(0).addClass("on");

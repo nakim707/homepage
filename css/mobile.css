@@ -309,7 +309,7 @@
     justify-content: center;
     gap: 5%;
     margin-top: -1rem;
-    padding-bottom: 1.5rem;
+    padding-bottom: 2rem;
   }
 
   /* ------- Design&Publishing ------- */
@@ -320,13 +320,13 @@
   }
   #con4 h2 {
     font-size: 50px;
-    padding-top: 5%;
+    padding-top: 3rem;
     margin-left: 7%;
   }
   .portTitle1 {
     display: flex;
     gap: 2%;
-    margin: 2% 0px 5% 7%;
+    margin: 1rem 0px 3rem 7%;
   }
   .portTitle1 li {
     width: 80px;
@@ -338,26 +338,28 @@
     gap: 2%;
     margin: 0px auto;
   } */
-  .mockup {
-    width: 400px;
+  /* .mockup {
+    width: 80%;
     margin: 0px auto;
-  }
+  } */
   /* 설명 */
   #con4 .tagWhite {
     width: 115px;
     height: 24px;
     line-height: 24px;
     font-size: 14px;
-    margin-top: -1rem;
+    margin: 4rem auto;
+    display: none;
   }
   .mockup h3 {
     font-size: 30px;
-    margin: 2rem 0px 1rem;
+    margin: 4rem 0px 1rem;
+    text-align: center;
   }
   .mockup h4 {
-    width: 350px;
     line-height: 30px;
     font-size: 15px;
+    text-align: center;
   }
   .mockup span {
     display: inline-block;
@@ -366,7 +368,9 @@
     font-size: 16px;
   }
   .detail {
-    margin-top: 1.5rem;
+    width: 300px;
+    margin: 1.5rem auto;
+    padding-bottom: 4rem;
   }
   .mockup p {
     line-height: 30px;
@@ -405,25 +409,34 @@
   }
   .mockup img {
     width: 320px;
+    display: block;
+    margin: 0px auto;
   }
+
   .mockup_info {
     width: 230px;
     display: flex;
     gap: 10px;
-    margin: 1.5rem auto;
+    margin: 2rem auto;
   }
   #con4 .tagBlue {
-    width: 70px;
+    width: calc(100% / 2 - 10px);
     font-size: 14px;
   }
   #con4 .tagBlue a {
+    width: 100%;
+    height: 100%;
+    display: block;
     color: white;
   }
   #con4 .tagBlack {
-    width: 70px;
+    width: calc(100% / 2 - 10px);
     font-size: 14px;
   }
   #con4 .tagBlack a {
+    width: 100%;
+    height: 100%;
+    display: block;
     color: white;
   }
 
