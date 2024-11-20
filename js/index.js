@@ -1,5 +1,6 @@
 $(function () {
   let baseline = -200;
+  let footerline = -1000;
 
   let con1 = $("#con1").offset().top + baseline;
   let con2 = $("#con2").offset().top + baseline;
@@ -31,6 +32,9 @@ $(function () {
 
       $("#navi").css({ opacity: "1" });
       $("header").css({ opacity: "1" });
+      // $(".selfi").addClass("active");
+      // $(".introduce").addClass("active");
+      $(".statusBar").addClass("active");
     } else if (scroll >= con4 && scroll < con5) {
       $("#navi li").removeClass("on");
       $("#navi li").eq(3).addClass("on");
@@ -38,6 +42,12 @@ $(function () {
       $("#navi").css({ opacity: "1" });
       $("header").css({ opacity: "1" });
       $("#con2 li").addClass("up");
+    } else if (scroll >= con5 && scroll < con6) {
+      $("#navi li").removeClass("on");
+      $("#navi li").eq(4).addClass("on");
+
+      $("#navi").css({ opacity: "1" });
+      $("header").css({ opacity: "1" });
     } else {
       $("#navi li").removeClass("on");
       $("#navi li").eq(4).addClass("on");
