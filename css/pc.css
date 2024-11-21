@@ -156,27 +156,27 @@
 
     animation: slide1 40s linear infinite;
   }
-  /* @keyframes slide1 {
+  @keyframes slide1 {
     0% {
       transform: translateX(-100%);
     }
     100% {
       transform: translateX(-100%);
     }
-  } */
+  }
   .rollDown {
     position: absolute;
     bottom: 25px;
     animation: slide2 40s linear infinite;
   }
-  /* @keyframes slide2 {
-  0% {
-    transform: translateX(-100%);
+  @keyframes slide2 {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(100%);
+    }
   }
-  100% {
-    transform: translateX(100%);
-  }
-} */
 
   /* ---------- Logo ---------- */
   #con2 {
@@ -193,7 +193,13 @@
   }
   .logowrap {
     padding-top: 100px;
-    padding-left: 80px;
+    position: relative;
+    right: -150%;
+    /* opacity: 0; */
+  }
+  .logowrap.active {
+    opacity: 1;
+    right: -5%;
   }
   /* 로고모음 */
   .poplogo {
@@ -204,12 +210,24 @@
     height: 230px;
     border: 1px solid black;
     background-color: white;
+    margin-left: -500px;
+    opacity: 0;
   }
   .popLogo img {
     width: 380px;
     margin: 51px 0px 0px 15px;
   }
-
+  .popLogo li.active {
+    opacity: 1;
+    margin-left: 0px;
+    transition: 1s;
+  }
+  .popLogo li:nth-child(2).active {
+    transition-delay: 0.2s;
+  }
+  .popLogo li:nth-child(3).active {
+    transition-delay: 0.4s;
+  }
   /* 사전적 정의 */
   .dicWord {
     width: 150px;
@@ -384,10 +402,36 @@
     border-radius: 20px;
     margin: 6px 0px 0px 5px;
   }
-  .statusBar.active > div {
-    width: 120px;
+
+  .html .statusBar.active > div {
+    width: 140px;
     transition: 2s;
-    transition-delay: 2.5s;
+    transition-delay: 2s;
+  }
+  .js .statusBar.active > div {
+    width: 100px;
+    transition: 1.4s;
+    transition-delay: 2s;
+  }
+  .Ps .statusBar.active > div {
+    width: 130px;
+    transition: 1.82s;
+    transition-delay: 2s;
+  }
+  .css .statusBar.active > div {
+    width: 140px;
+    transition: 2s;
+    transition-delay: 2s;
+  }
+  .jQ .statusBar.active > div {
+    width: 80px;
+    transition: 1.12s;
+    transition-delay: 2s;
+  }
+  .Ai .statusBar.active > div {
+    width: 110px;
+    transition: 1.54s;
+    transition-delay: 2s;
   }
   /* ------- Design&Publishing ------- */
   #con4 {
@@ -400,12 +444,12 @@
   #con4 h2 {
     font-size: 90px;
     padding-top: 80px;
-    margin-left: 285px;
+    margin-left: 15%;
   }
   .portTitle1 {
     display: flex;
     gap: 5px;
-    margin: 40px 0px 70px 315px;
+    margin: 40px 0px 70px 15%;
   }
   .portTitle1 li {
     width: 100px;
@@ -560,11 +604,100 @@
     width: 80px;
     height: 80px;
     margin: 20px auto;
+    position: relative;
+    transition: 1s;
+    transform-style: preserve-3d;
+  }
+  #con6 .img2 {
+    transition-delay: 0.3s;
+  }
+  #con6 .img3 {
+    transition-delay: 0.6s;
+  }
+  #con6 .phone .front {
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/contact1.png);
+    background-color: #002a76;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    backface-visibility: hidden;
+    z-index: 10;
+  }
+  #con6 .phone .back {
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/contact1REV.png);
+    background-color: #002a76;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    transform: rotateY(180deg);
+  }
+  #con6 .mail .front {
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/contact2.png);
+    background-color: #002a76;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    backface-visibility: hidden;
+    z-index: 10;
+  }
+  #con6 .mail .back {
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/contact2REV.png);
+    background-color: #002a76;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    transform: rotateY(180deg);
+  }
+  #con6 .blog .front {
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/contact3.png);
+    background-color: #002a76;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    backface-visibility: hidden;
+    z-index: 10;
+  }
+  #con6 .blog .back {
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/contact3REV.png);
+    background-color: #002a76;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    transform: rotateY(180deg);
+  }
+  /* #con6:hover .img {
+    transform: rotateY(180deg);
+  } */
+  #con6 .img.active {
+    transform: rotateY(180deg);
+  }
+  #con6 .front {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+  }
+  #con6 .back {
+    position: absolute;
+    top: 0px;
+    left: 0px;
   }
   #con6 img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    display: none;
   }
   #con6 p {
     color: white;

@@ -37,4 +37,19 @@ $(function () {
       markers: true,
     },
   });
+
+  // contact turn
+  let icon = gsap.utils.toArray("#con6 .img");
+
+  gsap.to(icon, {
+    scrollTrigger: {
+      trigger: "#con6",
+      pin: true,
+      scrub: 2,
+      start: "top top",
+      end: "bottom",
+      toggleClass: { targets: icon, className: "active" },
+      markers: true,
+    },
+  });
 });

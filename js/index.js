@@ -15,18 +15,23 @@ $(function () {
     // console.log(scroll);
 
     if (scroll >= con1 && scroll <= con2) {
+      //con1
       $("#navi li").removeClass("on");
       $("#navi li").eq(0).addClass("on");
 
       $("#navi").css({ opacity: "0" });
       $("header").css({ opacity: "0" });
     } else if (scroll >= con2 && scroll <= con3) {
+      //logo
       $("#navi li").removeClass("on");
       $("#navi li").eq(1).addClass("on");
 
       $("#navi").css({ opacity: "1" });
       $("header").css({ opacity: "1" });
+      $(".popLogo li").addClass("active");
+      $(".logowrap").addClass("active");
     } else if (scroll >= con3 && scroll < con4) {
+      //about me
       $("#navi li").removeClass("on");
       $("#navi li").eq(2).addClass("on");
 
@@ -36,6 +41,7 @@ $(function () {
       // $(".introduce").addClass("active");
       $(".statusBar").addClass("active");
     } else if (scroll >= con4 && scroll < con5) {
+      // portfolio
       $("#navi li").removeClass("on");
       $("#navi li").eq(3).addClass("on");
 
@@ -43,12 +49,14 @@ $(function () {
       $("header").css({ opacity: "1" });
       $("#con2 li").addClass("up");
     } else if (scroll >= con5 && scroll < con6) {
+      // illustration
       $("#navi li").removeClass("on");
       $("#navi li").eq(4).addClass("on");
 
       $("#navi").css({ opacity: "1" });
       $("header").css({ opacity: "1" });
     } else {
+      // contact
       $("#navi li").removeClass("on");
       $("#navi li").eq(4).addClass("on");
 
