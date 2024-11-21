@@ -1,13 +1,13 @@
 $(function () {
   let baseline = -200;
-  let footerline = -1000;
+  let footerline = 300;
 
   let con1 = $("#con1").offset().top + baseline;
   let con2 = $("#con2").offset().top + baseline;
   let con3 = $("#con3").offset().top + baseline;
   let con4 = $("#con4").offset().top + baseline;
   let con5 = $("#con5").offset().top + baseline;
-  let con6 = $("#con6").offset().top + baseline;
+  let con6 = $("#con6").offset().top + footerline;
   // console.log(con1, con2, con3, con4);
 
   $(window).on("scroll", function () {
@@ -29,7 +29,13 @@ $(function () {
       $("#navi").css({ opacity: "1" });
       $("header").css({ opacity: "1" });
       $(".popLogo li").addClass("active");
-      $(".logowrap").addClass("active");
+      // $(".logowrap").addClass("active");
+      $(".dicWord").addClass("active");
+      $(".dicMean").addClass("active");
+      $(".exp1").addClass("active");
+      $(".exp2").addClass("active");
+      $(".logowrap h3").addClass("active");
+      $(".logowrap h2").addClass("active");
     } else if (scroll >= con3 && scroll < con4) {
       //about me
       $("#navi li").removeClass("on");
@@ -62,6 +68,7 @@ $(function () {
 
       $("#navi").css({ opacity: "1" });
       $("header").css({ opacity: "1" });
+      $("#con6 .img").addClass("active");
     }
   });
 

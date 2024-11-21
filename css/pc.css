@@ -95,9 +95,13 @@
 } */
 
   /* ME */
-  #con1 .logo li:first-child {
+  /* #con1 .logo li:first-child {
     transform: translateX(-45px);
     z-index: 3;
+    transition: 1s;
+  } */
+  .logo li:first-child.active {
+    transform: translateX(-265px);
   }
   #con1 .logo li:last-child {
     transform: translateX(140px);
@@ -185,21 +189,75 @@
     min-height: 830px;
     box-sizing: border-box;
     padding-top: 100px;
+    position: relative;
   }
   .con2wrap {
     width: 1500px;
     margin: 0px auto;
     display: flex;
   }
-  .logowrap {
-    padding-top: 100px;
-    position: relative;
-    right: -150%;
-    /* opacity: 0; */
+  .dicWord,
+  .exp1,
+  .exp2 {
+    position: absolute;
+    left: 150%;
+    transition: 1s;
+    white-space: nowrap;
   }
-  .logowrap.active {
-    opacity: 1;
-    right: -5%;
+  .dicWord {
+    top: 20%;
+  }
+  .dicMean {
+    position: absolute;
+    top: 28%;
+    left: 150%;
+    transition: 1s;
+    white-space: nowrap;
+  }
+  .exp1 {
+    top: 33%;
+  }
+  .exp2 {
+    top: 41%;
+  }
+  .logowrap h3 {
+    position: absolute;
+
+    transition: 2.5s;
+    white-space: nowrap;
+    top: 51%;
+    left: 150%;
+  }
+  .logowrap h2 {
+    position: absolute;
+    left: 150%;
+    top: 63%;
+    transition: 2.5s;
+    white-space: nowrap;
+  }
+  .dicWord.active {
+    left: 35%;
+    transition-delay: 1.5s;
+  }
+  .dicMean.active {
+    left: 35%;
+    transition-delay: 2.5s;
+  }
+  .exp1.active {
+    left: 35%;
+    transition-delay: 2.7s;
+  }
+  .exp2.active {
+    left: 35%;
+    transition-delay: 2.9s;
+  }
+  .logowrap h3.active {
+    left: 35%;
+    transition-delay: 3.3s;
+  }
+  .logowrap h2.active {
+    left: 35%;
+    transition-delay: 3.7s;
   }
   /* 로고모음 */
   .poplogo {
@@ -223,10 +281,10 @@
     transition: 1s;
   }
   .popLogo li:nth-child(2).active {
-    transition-delay: 0.2s;
+    transition-delay: 0.25s;
   }
   .popLogo li:nth-child(3).active {
-    transition-delay: 0.4s;
+    transition-delay: 0.6s;
   }
   /* 사전적 정의 */
   .dicWord {
@@ -608,11 +666,14 @@
     transition: 1s;
     transform-style: preserve-3d;
   }
+  #con6 .img1 {
+    transition-delay: 0.5s;
+  }
   #con6 .img2 {
-    transition-delay: 0.3s;
+    transition-delay: 1s;
   }
   #con6 .img3 {
-    transition-delay: 0.6s;
+    transition-delay: 1.5s;
   }
   #con6 .phone .front {
     width: 100%;
@@ -682,6 +743,9 @@
   } */
   #con6 .img.active {
     transform: rotateY(180deg);
+  }
+  #con6:hover .img {
+    transform: rotateY(0deg);
   }
   #con6 .front {
     position: absolute;
