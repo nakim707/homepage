@@ -638,6 +638,10 @@
     left: 30%;
     transform: translateY(-50%);
   }
+  .illust li:hover img {
+    transform: scale(1.2);
+    transition: 1s;
+  }
   /* ------- contact ------- */
   #con6 {
     width: 100%;
