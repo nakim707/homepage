@@ -95,26 +95,43 @@
 } */
 
   /* ME */
-  /* #con1 .logo li:first-child {
+  .logo li:first-child {
     transform: translateX(-45px);
     z-index: 3;
-    transition: 1s;
-  } */
+    transition: 2.5s;
+    transition-delay: 2s;
+  }
   .logo li:first-child.active {
     transform: translateX(-265px);
   }
-  #con1 .logo li:last-child {
+  .logo li:last-child {
     transform: translateX(140px);
     z-index: 3;
   }
+  .logo li:last-child.active {
+    transform: translateX(305px);
+    transition: 2.5s;
+    transition-delay: 2s;
+  }
   /* US */
-  #con1 .usLogo {
+  .usLogo {
     color: #df7a82;
     /* display: none; */
   }
+  .usLogo1,
+  .usLogo2 {
+    margin-top: -140px;
+    opacity: 0;
+  }
+  .usLogo1.active {
+    opacity: 1;
+    margin-top: 0px;
+    transition: 2s;
+    transition-delay: 5s;
+  }
 
   /* 라인 */
-  #con1 .logoLine {
+  .logoLine {
     color: #002a76;
     -webkit-text-stroke: 1px white;
     font-style: italic;
@@ -129,10 +146,16 @@
     left: 50%;
     transform: translate(calc(-50% - 12px), calc(-50% + 12px));
     z-index: 1;
-  }
 
+    opacity: 0;
+  }
+  .logoLine.active {
+    opacity: 1;
+    transition: 2s;
+    transition-delay: 7s;
+  }
   /* 고리 */
-  #con1 .ring {
+  .ring {
     width: 1000px;
     height: 190px;
     border: 2px solid white;
@@ -141,6 +164,12 @@
     top: 50%;
     left: 50%;
     transform: rotate(-14deg) translate(-50%, -110%);
+    opacity: 0;
+  }
+  .ring.active {
+    opacity: 1;
+    transition: 2s;
+    transition-delay: 7s;
   }
   /* 흐르는 글씨 */
   .roll {
@@ -159,12 +188,16 @@
     top: 25px;
 
     animation: slide1 40s linear infinite;
+    animation-delay: 9s;
+    opacity: 0;
   }
   @keyframes slide1 {
     0% {
-      transform: translateX(-100%);
+      opacity: 1;
+      transform: translateX(40%);
     }
     100% {
+      opacity: 1;
       transform: translateX(-100%);
     }
   }
@@ -172,12 +205,16 @@
     position: absolute;
     bottom: 25px;
     animation: slide2 40s linear infinite;
+    animation-delay: 9s;
+    opacity: 0;
   }
   @keyframes slide2 {
     0% {
+      opacity: 1;
       transform: translateX(-100%);
     }
     100% {
+      opacity: 1;
       transform: translateX(100%);
     }
   }

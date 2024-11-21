@@ -2,13 +2,19 @@ $(function () {
   let baseline = -200;
   let footerline = 300;
 
-  let con1 = $("#con1").offset().top + baseline;
+  let con1 = $("#con1").offset().top;
   let con2 = $("#con2").offset().top + baseline;
   let con3 = $("#con3").offset().top + baseline;
   let con4 = $("#con4").offset().top + baseline;
   let con5 = $("#con5").offset().top + baseline;
   let con6 = $("#con6").offset().top + footerline;
   // console.log(con1, con2, con3, con4);
+
+  $(".logo li:first-child").addClass("active");
+  $(".logo li:last-child").addClass("active");
+  $(".usLogo1").addClass("active");
+  $(".logoLine").addClass("active");
+  $(".ring").addClass("active");
 
   $(window).on("scroll", function () {
     let scroll = $(this).scrollTop();
@@ -21,6 +27,9 @@ $(function () {
 
       $("#navi").css({ opacity: "0" });
       $("header").css({ opacity: "0" });
+      // $(".logo li:first-child").addClass("active");
+      // $(".logo li:last-child").addClass("active");
+      // $(".usLogo").addClass("active");
     } else if (scroll >= con2 && scroll <= con3) {
       //logo
       $("#navi li").removeClass("on");
