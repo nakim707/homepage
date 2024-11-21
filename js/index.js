@@ -10,11 +10,21 @@ $(function () {
   let con6 = $("#con6").offset().top + footerline;
   // console.log(con1, con2, con3, con4);
 
+  // visual active
   $(".logo li:first-child").addClass("active");
   $(".logo li:last-child").addClass("active");
   $(".usLogo1").addClass("active");
   $(".logoLine").addClass("active");
   $(".ring").addClass("active");
+
+  // header underline
+  $("header li").on("mouseenter", function () {
+    $(this).children("div").stop().animate({ width: "130%" });
+  });
+
+  $("header li").on("mouseleave", function () {
+    $(this).children("div").stop().animate({ width: "0%" });
+  });
 
   $(window).on("scroll", function () {
     let scroll = $(this).scrollTop();
@@ -27,9 +37,6 @@ $(function () {
 
       $("#navi").css({ opacity: "0" });
       $("header").css({ opacity: "0" });
-      // $(".logo li:first-child").addClass("active");
-      // $(".logo li:last-child").addClass("active");
-      // $(".usLogo").addClass("active");
     } else if (scroll >= con2 && scroll <= con3) {
       //logo
       $("#navi li").removeClass("on");
@@ -38,7 +45,6 @@ $(function () {
       $("#navi").css({ opacity: "1" });
       $("header").css({ opacity: "1" });
       $(".popLogo li").addClass("active");
-      // $(".logowrap").addClass("active");
       $(".dicWord").addClass("active");
       $(".dicMean").addClass("active");
       $(".exp1").addClass("active");
@@ -52,8 +58,6 @@ $(function () {
 
       $("#navi").css({ opacity: "1" });
       $("header").css({ opacity: "1" });
-      // $(".selfi").addClass("active");
-      // $(".introduce").addClass("active");
       $(".statusBar").addClass("active");
     } else if (scroll >= con4 && scroll < con5) {
       // portfolio

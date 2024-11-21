@@ -114,27 +114,27 @@
 
     animation: slide1 40s linear infinite;
   }
-  /* @keyframes slide1 {
-      0% {
-        transform: translateX(100%);
-      }
-      100% {
-        transform: translateX(-100%);
-      }
-    } */
+  @keyframes slide1 {
+    0% {
+      transform: translateX(10%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
   .rollDown {
     position: absolute;
     bottom: 2rem;
     animation: slide2 40s linear infinite;
   }
-  /* @keyframes slide2 {
-      0% {
-        transform: translateX(-100%);
-      }
-      100% {
-        transform: translateX(100%);
-      }
-    } */
+  @keyframes slide2 {
+    0% {
+      transform: translateX(-170%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
+  }
 
   /* ---------- Logo ---------- */
   #con2 {
@@ -487,6 +487,8 @@
   #con6 {
     width: 100%;
     height: 100vh;
+    max-height: 780px;
+    min-height: 540px;
     background-color: #002a76;
     box-sizing: border-box;
     padding-top: 0.5%;
