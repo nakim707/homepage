@@ -45,12 +45,14 @@ $(function () {
       $("#navi").css({ opacity: "1" });
       $("header").css({ opacity: "1" });
       $(".popLogo li").addClass("active");
+      $(".popLogo").addClass("active");
       $(".dicWord").addClass("active");
       $(".dicMean").addClass("active");
       $(".exp1").addClass("active");
       $(".exp2").addClass("active");
       $(".logowrap h3").addClass("active");
       $(".logowrap h2").addClass("active");
+      $(".logowrap").addClass("active");
     } else if (scroll >= con3 && scroll < con4) {
       //about me
       $("#navi li").removeClass("on");

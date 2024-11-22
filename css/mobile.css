@@ -5,7 +5,9 @@
   .mobile {
     display: none;
   }
-
+  /* section {
+    overflow: hidden;
+  } */
   /* ---------- con1 ---------- */
   #con1 {
     width: 100%;
@@ -139,9 +141,9 @@
   /* ---------- Logo ---------- */
   #con2 {
     width: 100%;
-    height: 100vh;
     box-sizing: border-box;
     padding-top: 14%;
+    padding-bottom: 5%;
     position: relative;
   }
   .con2wrap {
@@ -149,13 +151,19 @@
   }
   .logowrap {
     width: 95%;
-    margin: 0px auto;
     padding-top: 10%;
+    margin-left: -100%;
+  }
+  .logowrap.active {
+    margin: 3%;
+    transition: 1s;
+    transition-delay: 0.5s;
   }
   /* 로고모음 */
   .popLogo {
     width: 80%;
     margin: 0px auto;
+    margin-left: -100%;
   }
   .popLogo li {
     width: 100%;
@@ -164,7 +172,10 @@
   .popLogo img {
     width: 100%;
   }
-
+  .popLogo.active {
+    margin-left: 10%;
+    transition: 1s;
+  }
   /* 사전적 정의 */
   .dicWord {
     width: 5rem;
@@ -306,21 +317,33 @@
 
   .html .statusBar.active > div {
     width: 110px;
+    transition: 2s;
+    transition-delay: 2s;
   }
   .js .statusBar.active > div {
     width: 85px;
+    transition: 2s;
+    transition-delay: 2s;
   }
   .Ps .statusBar.active > div {
     width: 100px;
+    transition: 2s;
+    transition-delay: 2s;
   }
   .css .statusBar.active > div {
     width: 110px;
+    transition: 2s;
+    transition-delay: 2s;
   }
   .jQ .statusBar.active > div {
     width: 60px;
+    transition: 2s;
+    transition-delay: 2s;
   }
   .Ai .statusBar.active > div {
     width: 90px;
+    transition: 2s;
+    transition-delay: 2s;
   }
   .statusWrap {
     display: flex;
@@ -463,6 +486,7 @@
     width: 100%;
     box-sizing: border-box;
     padding: 10% 0%;
+    background-color: #ebf7ff;
   }
   #con5 img {
     width: 100%;
@@ -474,20 +498,33 @@
     font-size: 16px;
     margin-left: 9%;
   }
-  #con5 ul {
+  /* #con5 ul {
     width: 70%;
     margin: 1.5rem auto;
     display: flex;
     flex-direction: column;
     text-align: center;
     gap: 1.5rem;
+  } */
+  #con5 ul {
+    display: flex;
+    width: 400%;
+    text-align: center;
+    gap: 40px;
+    margin-top: 1rem;
   }
-
+  #con5 li {
+    width: 90%;
+  }
+  .illust li:hover img {
+    transform: scale(1.2);
+    transition: 1s;
+  }
   /* ------- contact ------- */
   #con6 {
     width: 100%;
     height: 100vh;
-    max-height: 780px;
+    max-height: 680px;
     min-height: 540px;
     background-color: #002a76;
     box-sizing: border-box;
@@ -506,6 +543,9 @@
     width: 70px;
     height: 70px;
     margin: -1.2rem auto;
+    position: relative;
+    transition: 1s;
+    transform-style: preserve-3d;
   }
   #con6 img {
     width: 100%;
@@ -517,7 +557,110 @@
     text-align: center;
     margin-top: 2rem;
   }
+  #con6 .img1 {
+    transition-delay: 0.5s;
+  }
+  #con6 .img2 {
+    transition-delay: 1s;
+  }
+  #con6 .img3 {
+    transition-delay: 1.5s;
+  }
+  #con6 .phone .front {
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/contact1.png);
+    background-color: #002a76;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    backface-visibility: hidden;
+    z-index: 10;
+  }
+  #con6 .phone .back {
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/contact1REV.png);
+    background-color: #002a76;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    transform: rotateY(180deg);
+  }
+  #con6 .mail .front {
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/contact2.png);
+    background-color: #002a76;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    backface-visibility: hidden;
+    z-index: 10;
+  }
+  #con6 .mail .back {
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/contact2REV.png);
+    background-color: #002a76;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    transform: rotateY(180deg);
+  }
+  #con6 .blog .front {
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/contact3.png);
+    background-color: #002a76;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    backface-visibility: hidden;
+    z-index: 10;
+  }
+  #con6 .blog .back {
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/contact3REV.png);
+    background-color: #002a76;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    transform: rotateY(180deg);
+  }
+  #con6 .img.active {
+    transform: rotateY(180deg);
+  }
 
+  #con6 .phone:hover .back {
+    transform: scale(1.2);
+  }
+  #con6 .phone .back {
+    transition: 1s;
+  }
+  #con6 .mail:hover .back {
+    transform: scale(1.2);
+  }
+  #con6 .mail .back {
+    transition: 1s;
+  }
+  #con6 .blog:hover .back {
+    transform: scale(1.2);
+  }
+  #con6 .blog .back {
+    transition: 1s;
+  }
+  #con6 .back {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+  }
+  #con6 .back {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+  }
   /* ------- tag ------- */
   .tagOrange {
     background-color: #df6d55;

@@ -202,13 +202,13 @@
     top: 25px;
 
     animation: slide1 70s linear infinite;
-    /* animation-delay: 9s; */
+    animation-delay: 9s;
     opacity: 0;
   }
   @keyframes slide1 {
     0% {
       opacity: 1;
-      transform: translateX(0%);
+      transform: translateX(20%);
     }
     100% {
       opacity: 1;
@@ -219,13 +219,13 @@
     position: absolute;
     bottom: 25px;
     animation: slide2 105s linear infinite;
-    /* animation-delay: 9s; */
+    animation-delay: 9s;
     opacity: 0;
   }
   @keyframes slide2 {
     0% {
       opacity: 1;
-      transform: translateX(-80%);
+      transform: translateX(-100%);
     }
     100% {
       opacity: 1;

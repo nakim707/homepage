@@ -133,7 +133,7 @@
   }
 
   /* 라인 */
-  #con1 .logoLine {
+  .logoLine {
     color: #002a76;
     -webkit-text-stroke: 1px white;
     font-style: italic;
@@ -156,7 +156,7 @@
     transition-delay: 7s;
   }
   /* 고리 */
-  #con1 .ring {
+  .ring {
     width: 850px;
     height: 150px;
     border: 1px solid white;
@@ -189,7 +189,7 @@
     top: 25px;
 
     animation: slide1 70s linear infinite;
-    animation-delay: 8s;
+    animation-delay: 8.5s;
     opacity: 0;
   }
   @keyframes slide1 {
@@ -198,6 +198,7 @@
       transform: translateX(10%);
     }
     100% {
+      opacity: 1;
       transform: translateX(-100%);
     }
   }
@@ -205,7 +206,7 @@
     position: absolute;
     bottom: 25px;
     animation: slide2 80s linear infinite;
-    animation-delay: 8s;
+    animation-delay: 8.5s;
     opacity: 0;
   }
   @keyframes slide2 {
@@ -214,6 +215,7 @@
       transform: translateX(-100%);
     }
     100% {
+      opacity: 1;
       transform: translateX(100%);
     }
   }
@@ -233,8 +235,8 @@
     margin: 0px auto;
   }
   .logowrap {
-    padding-top: 7%;
-    padding-left: 5%;
+    margin-top: 7%;
+    margin-left: -50%;
   }
   /* 로고모음 */
   .popLogo {
@@ -242,7 +244,11 @@
     display: flex;
     position: absolute;
     top: 13%;
+    right: -50%;
+  }
+  .popLogo.active {
     right: 10%;
+    transition: 1s;
   }
   .popLogo li {
     width: 100%;
@@ -265,11 +271,41 @@
     background-color: #e3f5ff;
     margin-bottom: 2rem;
   }
+  .dicWord.active {
+    margin-left: 37%;
+    transition: 1s;
+    transition-delay: 0.5s;
+  }
   .dicMean {
     font-size: 22px;
   }
+  .dicMean.active {
+    margin-left: 37%;
+    transition: 1s;
+    transition-delay: 1.1s;
+  }
   .noun {
     color: #0143cb;
+  }
+  .exp1.active {
+    margin-left: 37%;
+    transition: 1s;
+    transition-delay: 1.7s;
+  }
+  .exp2.active {
+    margin-left: 37%;
+    transition: 1s;
+    transition-delay: 1.9s;
+  }
+  .logowrap h3.active {
+    margin-left: 37%;
+    transition: 1s;
+    transition-delay: 2.5s;
+  }
+  .logowrap h2.active {
+    margin-left: 37%;
+    transition: 1s;
+    transition-delay: 2.7s;
   }
   .muse {
     background-color: #e3f5ff;
@@ -330,8 +366,14 @@
     font-size: 18px;
     margin-left: -0.7rem;
   }
-  #con3 .selfi {
+  .selfi {
     width: 360px;
+    margin-top: 200px;
+  }
+  .selfi.active {
+    opacity: 1;
+    margin-top: 0px;
+    transition: 1s;
   }
   .myself {
     display: flex;
@@ -350,7 +392,19 @@
     margin: 1rem 0px;
   }
   .introduce {
+    margin-top: 20rem;
+  }
+  .introduce .major {
+    line-height: 100px;
+  }
+  .introduce.active {
+    opacity: 1;
     margin-top: 2rem;
+    transition: 1s;
+  }
+  .introduce.active .major {
+    line-height: 30px;
+    transition: 1s;
   }
   #con3 .major .majorDate {
     font-weight: normal;
@@ -385,7 +439,7 @@
     margin-bottom: 0.7rem;
   }
   .status1 {
-    margin-top: -2rem;
+    margin-top: -4rem;
   }
   .status li > ul {
     display: flex;
@@ -552,12 +606,13 @@
   /* ------- Illustration ------- */
   #con5 {
     width: 100%;
-    height: 80vh;
+    height: 100vh;
     min-height: 400px;
     max-height: 500px;
     position: relative;
     box-sizing: border-box;
     padding-top: 5%;
+    background-color: #ebf7ff;
   }
   #con5 img {
     width: 100%;
@@ -586,7 +641,10 @@
     left: 35%;
     transform: translateY(-50%);
   }
-
+  .illust li:hover img {
+    transform: scale(1.2);
+    transition: 1s;
+  }
   /* ------- contact ------- */
   #con6 {
     width: 100%;
@@ -611,6 +669,9 @@
     width: 70px;
     height: 70px;
     margin: 1.2rem auto;
+    position: relative;
+    transition: 1s;
+    transform-style: preserve-3d;
   }
   #con6 img {
     width: 100%;
@@ -623,6 +684,110 @@
     margin-top: -0.5rem;
   }
 
+  #con6 .img1 {
+    transition-delay: 0.5s;
+  }
+  #con6 .img2 {
+    transition-delay: 1s;
+  }
+  #con6 .img3 {
+    transition-delay: 1.5s;
+  }
+  #con6 .phone .front {
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/contact1.png);
+    background-color: #002a76;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    backface-visibility: hidden;
+    z-index: 10;
+  }
+  #con6 .phone .back {
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/contact1REV.png);
+    background-color: #002a76;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    transform: rotateY(180deg);
+  }
+  #con6 .mail .front {
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/contact2.png);
+    background-color: #002a76;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    backface-visibility: hidden;
+    z-index: 10;
+  }
+  #con6 .mail .back {
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/contact2REV.png);
+    background-color: #002a76;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    transform: rotateY(180deg);
+  }
+  #con6 .blog .front {
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/contact3.png);
+    background-color: #002a76;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    backface-visibility: hidden;
+    z-index: 10;
+  }
+  #con6 .blog .back {
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/contact3REV.png);
+    background-color: #002a76;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    transform: rotateY(180deg);
+  }
+  #con6 .img.active {
+    transform: rotateY(180deg);
+  }
+
+  #con6 .phone:hover .back {
+    transform: scale(1.2);
+  }
+  #con6 .phone .back {
+    transition: 1s;
+  }
+  #con6 .mail:hover .back {
+    transform: scale(1.2);
+  }
+  #con6 .mail .back {
+    transition: 1s;
+  }
+  #con6 .blog:hover .back {
+    transform: scale(1.2);
+  }
+  #con6 .blog .back {
+    transition: 1s;
+  }
+  #con6 .back {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+  }
+  #con6 .back {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+  }
   /* ------- tag ------- */
   .tagOrange {
     background-color: #df6d55;
